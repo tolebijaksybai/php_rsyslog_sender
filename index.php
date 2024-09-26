@@ -36,7 +36,7 @@ function sendLog(string $message, string $serverIp, int $serverPort = 514): void
 
 try {
     $hostname = gethostname(); // Получение имени хоста
-    $facility = 1; // LOCAL0
+    $facility = 12;
     $severity = 6; // INFO
     $priority = ($facility * 8) + $severity; // Формируем приоритет
 
