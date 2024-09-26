@@ -27,3 +27,30 @@ $priority = ($facility * 8) + $severity;
 | **6**   | Informational |
 | **7**   | Debug         |
 
+## Номера локальных подсистем (Facility Levels)
+
+| Номер | Описание           |
+|-------|--------------------|
+| **0** | Kernel messages     |
+| **1** | User-level messages |
+| **2** | Mail system        |
+| **3** | System daemons     |
+| **4** | Security/authorization messages |
+| **5** | Syslogd messages   |
+| **6** | Line printer subsystem |
+| **7** | Network news subsystem |
+| **8** | UUCP subsystem     |
+| **9** | Clock daemon       |
+| **10**| FTP daemon         |
+| **11**| NTP subsystem      |
+| **12**| Log audit          |
+| **13**| Log alert          |
+| **14**| Clock daemon       |
+| **15**| Local0            |
+| **16**| Local1            |
+| **17**| Local2            |
+| **18**| Local3            |
+| **19**| Local4            |
+| **20**| Local5            |
+| **21**| Local6            |
+| **22**| Local7            |
