@@ -36,12 +36,13 @@ function sendLog(string $message, string $serverIp, int $serverPort = 514): void
 
 try {
     $hostname = gethostname(); // Получение имени хоста
-    $facility = 12;
-    $severity = 6; // INFO
+    $facility = 1;
+    $severity = LOG_INFO; // INFO
     $priority = ($facility * 8) + $severity; // Формируем приоритет
+    $time = time();
 
     // Формирование сообщения
-    $message = "<{$priority}>" . date("M d H:i:s") . " {$hostname} my_php_script: This PHP script was sent by Tolebi\n";
+    $message = "<{$priority}>" . date("M d H:i:s") . " {$hostname} my_php_script: This PHP script was sent by Tolebi, {$time}\n";
 
     sendLog($message, $logServerIp, $logServerPort);
 } catch (Exception $e) {

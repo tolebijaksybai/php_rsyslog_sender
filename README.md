@@ -16,41 +16,47 @@ $priority = ($facility * 8) + $severity;
 ```
 ## Уровни серьезности (Severity Levels)
 
-| Уровень | Описание      |
-|---------|---------------|
-| **0**   | Emergency     |
-| **1**   | Alert         |
-| **2**   | Critical      |
-| **3**   | Error         |
-| **4**   | Warning       |
-| **5**   | Notice        |
-| **6**   | Informational |
-| **7**   | Debug         |
+| Уровень | Описание                                 |
+|---------|------------------------------------------|
+| **0**   | Emergency (Система не работоспособна)    |
+| **1**   | Alert (Необходимо срочное вмешательство) |
+| **2**   | Critical (Критические события)           |
+| **3**   | Error (Сообщения о ошибках)              |
+| **4**   | Warning (Всевозможные предупреждения)    |
+| **5**   | Notice (Различные важные уведомления)    |
+| **6**   | Informational (Информационные сообшения) |
+| **7**   | Debug (Отладочые сообщения)                                 |
 
 ## Номера локальных подсистем (Facility Levels)
 
-| Номер | Описание           |
-|-------|--------------------|
-| **0** | Kernel messages     |
-| **1** | User-level messages |
-| **2** | Mail system        |
-| **3** | System daemons     |
-| **4** | Security/authorization messages |
-| **5** | Syslogd messages   |
-| **6** | Line printer subsystem |
-| **7** | Network news subsystem |
-| **8** | UUCP subsystem     |
-| **9** | Clock daemon       |
-| **10**| FTP daemon         |
-| **11**| NTP subsystem      |
-| **12**| Log audit          |
-| **13**| Log alert          |
-| **14**| Clock daemon       |
-| **15**| Local0            |
-| **16**| Local1            |
-| **17**| Local2            |
-| **18**| Local3            |
-| **19**| Local4            |
-| **20**| Local5            |
-| **21**| Local6            |
-| **22**| Local7            |
+| Номер | Описание                                                                              |
+|-------|---------------------------------------------------------------------------------------|
+| **0** | Kernel messages (Лог сообщения генерируемые ядром)                                    |
+| **1** | User-level messages (Лог сообщения генерируемые процессами пользователя)              |
+| **2** | Mail system (Лог сообщения от почтовой системы)                                       |
+| **3** | System daemons (Лог сообщения генерируемые системными демонами)                       |
+| **4** | Security/authorization messages (Лог сообщения связаные с авторизацией пользователей) |
+| **5** | Syslogd messages (сообщения, генерируемые внутри syslogd)                                                                   |
+| **6** | Line printer subsystem (Логи от системы печати)                                       |
+| **7** | Network news subsystem (Логи от сервера новостей)                                     |
+| **8** | UUCP subsystem (Зарезервировано за системой UUCP)                                     |
+| **9** | Clock daemon (Лог сообщения полученные от cron)                                       |
+| **10**| FTP daemon                                                                            |
+| **11**| NTP subsystem                                                                         |
+| **12**| Log audit                                                                             |
+| **13**| Log alert                                                                             |
+| **14**| Clock daemon                                                                          |
+| **15**| Local0                                                                                |
+| **16**| Local1                                                                                |
+| **17**| Local2                                                                                |
+| **18**| Local3                                                                                |
+| **19**| Local4                                                                                |
+| **20**| Local5                                                                                |
+| **21**| Local6                                                                                |
+| **22**| Local7                                                                                |
+
+
+## Полезные ссылки
+- [Журналирование событий на маршрутизаторе Cisco](https://www.opennet.ru/base/cisco/cisco_logging.txt.html)
+- [Predefined Constants](https://www.php.net/manual/en/network.constants.php)
+- [Rsyslog](https://wiki.gentoo.org/wiki/Rsyslog)
